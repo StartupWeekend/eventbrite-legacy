@@ -14,7 +14,6 @@ module Eventbrite
 
           perform_with_nested_object(:get, :v1, "/json/user_get/", options, :user, Eventbrite::Legacy::User)
         end
-
       end
     end
   end

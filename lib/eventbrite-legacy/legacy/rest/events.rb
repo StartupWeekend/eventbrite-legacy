@@ -1,5 +1,5 @@
 require 'eventbrite-legacy/legacy/rest/utils'
-require 'eventbrite-legacy/legacy/process'
+require 'eventbrite-legacy/legacy/action'
 
 module Eventbrite
   module Legacy
@@ -11,7 +11,7 @@ module Eventbrite
           options[:id]    = extract_id(event)
           options[:title] = title
 
-          perform_with_nested_object(:get, :v1, "/json/event_copy/", options, :process, Eventbrite::Legacy::Process)
+          perform_with_nested_object(:get, :v1, "/json/event_copy/", options, :process, Eventbrite::Legacy::Action)
         end
       end
     end

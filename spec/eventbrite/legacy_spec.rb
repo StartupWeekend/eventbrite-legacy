@@ -36,7 +36,7 @@ describe Eventbrite::Legacy do
           )
       end
 
-      it { should be_a_kind_of(Eventbrite::Legacy::Process) }
+      it { should be_a_kind_of(Eventbrite::Legacy::Action) }
     end
 
     context 'Missing Event Name' do

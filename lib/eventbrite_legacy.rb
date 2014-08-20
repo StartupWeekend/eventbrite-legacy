@@ -1,3 +1,4 @@
+require 'hashie'
 require 'eventbrite-legacy/legacy'
 
 # Loads Legacy API to Client
