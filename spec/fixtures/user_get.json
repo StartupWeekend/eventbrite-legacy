@@ -1,0 +1,18 @@
+{
+  "user": {
+    "first_name": "Joe",
+    "last_name": "Doe",
+    "user_id": 92827657,
+    "date_modified": "2014-07-15 10:30:31",
+    "date_created": "2014-03-13 09:44:44",
+    "email": "apisandbox@eventbrite.com",
+    "subusers": [
+      {
+        "subuser": {
+          "id": 100916607,
+          "email": "apisandbox+sub@eventbrite.com"
+        }
+      }
+    ]
+  }
+}

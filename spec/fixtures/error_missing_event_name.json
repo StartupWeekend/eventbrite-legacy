@@ -1,0 +1,6 @@
+{
+  "error": {
+    "error_type": "Event error",
+    "error_message": "The new event name is missing."
+  }
+}
