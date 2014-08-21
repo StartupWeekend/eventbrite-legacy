@@ -14,6 +14,7 @@ require 'rspec'
 require 'rspec/its'
 require 'webmock/rspec'
 require 'pry'
+require 'faker'
 
 # Load Files in Support directory
 Dir["./spec/support/**/*.rb"].sort.each {|f| require f}

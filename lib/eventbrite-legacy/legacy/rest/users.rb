@@ -14,6 +14,12 @@ module Eventbrite
 
           perform_with_nested_object(:get, :v1, "/json/user_get/", options, :user, Eventbrite::Legacy::User)
         end
+
+        def user_new(email, password, options = {})
+          options.merge!(email: email, passwd: password)
+
+          perform_with_nested_object(:get, :v1, "/json/user_new/", options, :user, Eventbrite::Legacy::Action)
+        end
       end
     end
   end

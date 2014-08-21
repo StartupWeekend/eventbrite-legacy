@@ -54,6 +54,29 @@ describe Eventbrite::Legacy do
 
       it { lambda{ subject }.should raise_error(Eventbrite::Error) }
     end
+  end
 
+  describe '.user_new' do
+    subject { client.user_new(email, password) }
+
+    context 'successful request' do
+      let(:email) { Faker::Internet.email }
+      let(:password) { Faker::Lorem.characters(10) }
+
+      before do
+        stub_request(:get, 'https://www.eventbrite.com/json/user_new/').
+          with(query: { email: email, passwd: password }).
+          to_return(
+            :body => fixture('user_new.json'),
+            :headers => {:content_type => 'application/json; charset=utf-8'}
+          )
+      end
+
+      it { should be_a_kind_of(Eventbrite::Legacy::Action) }
+      its(:id) { should eq("908163459") }
+      its(:status) { should eq('ok') }
+      its(:message) { should eq('user_new : complete') }
+      its(:user_key) { should eq('119244377060821920') }
+    end
   end
 end
