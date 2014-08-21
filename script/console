@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+$:.unshift File.expand_path('../lib', __FILE__)
+
+require 'bundler'
+Bundler.require
+
+require 'eventbrite'
+require 'eventbrite_legacy'
+require 'irb'
+require 'pry'
+
+IRB.start
