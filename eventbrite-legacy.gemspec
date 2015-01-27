@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.description = %q{A Ruby wrapper for the Eventbrite Legacy REST API}
 
   # Gems
-  spec.add_dependency 'eventbrite', '~> 0.1.0'
+  spec.add_dependency 'eventbrite', '~> 0.2.0'
   spec.add_dependency 'hashie', '~> 3.2.0'
   spec.add_development_dependency 'bundler', '~> 1.0'
 

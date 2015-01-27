@@ -2,14 +2,14 @@ PATH
   remote: .
   specs:
     eventbrite-legacy (0.1.0)
-      eventbrite (~> 0.1.0)
+      eventbrite (~> 0.2.0)
       hashie (~> 3.2.0)
 
 GIT
   remote: git://github.com/whereisciao/eventbrite.git
-  revision: e66cb3b1c99acf70696205b14085b5125abf0079
+  revision: b2522a2aff8f12ed592c11d09eb9c2715aebb7c4
   specs:
-    eventbrite (0.1.0)
+    eventbrite (0.2.0)
       addressable (~> 2.3)
       equalizer (~> 0.0.9)
       faraday (~> 0.9.0)
@@ -45,7 +45,7 @@ GEM
     equalizer (0.0.9)
     faker (1.4.3)
       i18n (~> 0.5)
-    faraday (0.9.0)
+    faraday (0.9.1)
       multipart-post (>= 1.2, < 3)
     ffi (1.9.3)
     formatador (0.2.5)
@@ -59,11 +59,11 @@ GEM
       guard (~> 2.1)
       rspec (>= 2.14, < 4.0)
     hashie (3.2.0)
-    http (0.6.2)
+    http (0.6.3)
       http_parser.rb (~> 0.6.0)
     http_parser.rb (0.6.0)
     i18n (0.6.11)
-    json (1.8.1)
+    json (1.8.2)
     listen (2.7.9)
       celluloid (>= 0.15.2)
       rb-fsevent (>= 0.9.3)
